@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.npm-cache/
+npm-debug.log
+.DS_Store
+.env
+preview.log
+tunnel.log
+vite-dev.log
