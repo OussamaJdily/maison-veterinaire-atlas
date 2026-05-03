@@ -2,6 +2,7 @@ import { DepthCard } from "./DepthCard";
 import { CheckIcon } from "./icons";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
+import UltraImage from "./UltraImage";
 
 export function ExperienceSection({ content, media }) {
   return (
@@ -40,12 +41,10 @@ export function ExperienceSection({ content, media }) {
                 maxTilt={6}
               >
                 <div className="depth-layer-1 relative h-[300px] overflow-hidden rounded-[1.6rem] sm:h-[380px]">
-                  <img
+                  <UltraImage
                     src={media.primary.src}
                     alt={content.photoAlt}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full"
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,8,7,0.04),rgba(5,8,7,0.42))]" />
                 </div>
@@ -56,12 +55,10 @@ export function ExperienceSection({ content, media }) {
 
                 <div className="mt-4 grid gap-4 md:grid-cols-2">
                   <div className="depth-layer-1 overflow-hidden rounded-[1.4rem] border border-[var(--line-soft)] bg-[var(--surface-2)]">
-                    <img
+                    <UltraImage
                       src={media.secondary.src}
                       alt={content.secondaryAlt}
-                      loading="lazy"
-                      decoding="async"
-                      className="h-32 w-full object-cover"
+                      className="h-32 w-full"
                     />
                     <div className="p-4">
                       <p className="text-sm font-semibold">{content.tileLabel}</p>

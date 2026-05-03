@@ -1,6 +1,7 @@
 import { DepthCard } from "./DepthCard";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
+import UltraImage from "./UltraImage";
 
 export function TeamSection({ content, media }) {
   return (
@@ -46,12 +47,10 @@ export function TeamSection({ content, media }) {
                 hoverLift={6}
                 maxTilt={6}
               >
-                <img
-                  src={media.teamMoment.src}
+                <UltraImage
+                  src={media.careTeam.src}
                   alt={content.photoAlt}
-                  loading="lazy"
-                  decoding="async"
-                  className="depth-layer-1 h-full min-h-[460px] w-full object-cover"
+                  className="h-full min-h-[460px] w-full"
                 />
                 <div className="depth-layer-2 absolute inset-x-0 bottom-0 bg-[linear-gradient(180deg,transparent,rgba(9,13,11,0.78))] p-6 text-white">
                   <p className="text-xs uppercase tracking-[0.28em] text-white/70">
@@ -60,7 +59,7 @@ export function TeamSection({ content, media }) {
                   <p className="mt-3 max-w-md text-sm leading-7 text-white/85">
                     {content.photoCaption}
                   </p>
-                  <p className="mt-3 text-[11px] text-white/60">{media.teamMoment.credit}</p>
+                  <p className="mt-3 text-[11px] text-white/60">{media.careTeam.credit}</p>
                 </div>
               </DepthCard>
             </Reveal>

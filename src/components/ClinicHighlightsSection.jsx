@@ -3,6 +3,7 @@ import { DepthCard } from "./DepthCard";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
 import { CheckIcon, StarIcon } from "./icons";
+import UltraImage from "./UltraImage";
 
 function PhotoTile({ item, className = "" }) {
   const prefersReducedMotion = useReducedMotion();
@@ -14,12 +15,10 @@ function PhotoTile({ item, className = "" }) {
       hoverLift={6}
       maxTilt={6}
     >
-      <img
+      <UltraImage
         src={item.src}
         alt={item.alt}
-        loading="lazy"
-        decoding="async"
-        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        className="h-full w-full group-hover:scale-[1.03]"
       />
       <motion.div
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.18),transparent)] opacity-0"
@@ -41,7 +40,7 @@ function PhotoTile({ item, className = "" }) {
 
 export function ClinicHighlightsSection({ content, media }) {
   const primaryImage = {
-    ...media.comfortDog,
+    ...media.clinicLobby,
     alt: content.media.primaryAlt,
     label: content.media.primaryLabel,
     caption: content.media.primaryCaption,
@@ -49,13 +48,13 @@ export function ClinicHighlightsSection({ content, media }) {
 
   const secondaryImages = [
     {
-      ...media.catExam,
+      ...media.modernConsult,
       alt: content.media.secondaryAltOne,
       label: content.media.secondaryLabelOne,
       caption: content.media.secondaryCaptionOne,
     },
     {
-      ...media.teamMoment,
+      ...media.careTeam,
       alt: content.media.secondaryAltTwo,
       label: content.media.secondaryLabelTwo,
       caption: content.media.secondaryCaptionTwo,
