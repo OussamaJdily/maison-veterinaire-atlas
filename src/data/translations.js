@@ -53,31 +53,37 @@ export const translations = {
           title: "Consultation",
           description:
             "Bilans complets, prevention, dermatologie, nutrition et suivi personnalise selon l'age et le mode de vie de votre compagnon.",
+          imageSrc: "https://images.pexels.com/photos/6235108/pexels-photo-6235108.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "Vaccination",
           description:
             "Protocoles vaccines et rappels organises, avec explications claires pour les proprietaires et manipulation douce des animaux sensibles.",
+          imageSrc: "https://images.pexels.com/photos/6234609/pexels-photo-6234609.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "Chirurgie",
           description:
             "Interventions programmees avec monitoring moderne, accompagnement pre-operatoire et recuperation suivie avec attention.",
+          imageSrc: "https://images.pexels.com/photos/6234622/pexels-photo-6234622.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "Urgences",
           description:
             "Evaluation rapide, tri clinique et decisions immediates pour les situations qui demandent une reaction efficace.",
+          imageSrc: "https://images.pexels.com/photos/6234612/pexels-photo-6234612.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "Imagerie",
           description:
             "Aide au diagnostic avec lecture rigoureuse des situations respiratoires, digestives, locomotrices et de controle post-operatoire.",
+          imageSrc: "https://images.pexels.com/photos/6235104/pexels-photo-6235104.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "Dentisterie",
           description:
             "Controle bucco-dentaire, prevention du tartre, conseils a domicile et prise en charge des douleurs ou infections dentaires.",
+          imageSrc: "https://images.pexels.com/photos/6234616/pexels-photo-6234616.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
       ],
     },
@@ -250,25 +256,25 @@ export const translations = {
         "Soins, attention, precision et relation humaine: les visuels du site incarnent la qualite de service que nous voulons projeter en ligne comme sur place.",
       items: [
         {
-          imageKey: "dogDental",
+          imageKey: "surgerySuite",
           title: "Controle clinique detaille",
           text: "Des examens visuels et manuels precis pour identifier rapidement les besoins de soin.",
           alt: "Veterinaire examinant la dentition d'un chien",
         },
         {
-          imageKey: "pomConsult",
+          imageKey: "modernConsult",
           title: "Consultation collaborative",
           text: "Une clinique plus lisible ou l'equipe partage les informations utiles en temps reel.",
           alt: "Equipe veterinaire autour d'un petit chien en consultation",
         },
         {
-          imageKey: "catExam",
+          imageKey: "dentalCare",
           title: "Approche douce pour les chats",
           text: "Des gestes plus delicats et une lecture adaptee aux comportements felins.",
           alt: "Chat blanc examine en clinique veterinaire",
         },
         {
-          imageKey: "catDental",
+          imageKey: "careTeam",
           title: "Suivi bucco-dentaire",
           text: "La sante dentaire fait partie des points souvent invisibles mais essentiels dans le confort quotidien.",
           alt: "Examen bucco-dentaire d'un chat en clinique",
@@ -452,31 +458,37 @@ export const translations = {
           title: "الاستشارة",
           description:
             "فحوصات شاملة، وقاية، جلدية، تغذية ومتابعة مخصصة حسب العمر ونمط حياة الحيوان.",
+          imageSrc: "https://images.pexels.com/photos/6235108/pexels-photo-6235108.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "التلقيح",
           description:
             "بروتوكولات واضحة وتذكير منظم وشرح سهل للمالكين مع تعامل لطيف مع الحيوانات الحساسة.",
+          imageSrc: "https://images.pexels.com/photos/6234609/pexels-photo-6234609.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "الجراحة",
           description:
             "تدخلات مبرمجة مع مراقبة حديثة وتحضير جيد قبل العملية ومتابعة دقيقة بعد التدخل.",
+          imageSrc: "https://images.pexels.com/photos/6234622/pexels-photo-6234622.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "الطوارئ",
           description:
             "تقييم سريع وفرز سريري وقرارات مباشرة للحالات التي تحتاج استجابة فعالة.",
+          imageSrc: "https://images.pexels.com/photos/6234612/pexels-photo-6234612.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "التصوير الطبي",
           description:
             "دعم التشخيص بقراءة دقيقة للحالات التنفسية والهضمية والحركية ولمتابعة ما بعد الجراحة.",
+          imageSrc: "https://images.pexels.com/photos/6235104/pexels-photo-6235104.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
         {
           title: "العناية السنية",
           description:
             "فحص الفم والاسنان، الوقاية من الترسبات، نصائح منزلية وعلاج الالم او الالتهابات السنية.",
+          imageSrc: "https://images.pexels.com/photos/6234616/pexels-photo-6234616.jpeg?auto=compress&cs=tinysrgb&w=800",
         },
       ],
     },
@@ -649,25 +661,25 @@ export const translations = {
         "العناية، الدقة، والبعد الانساني: الصور داخل الموقع تعكس مستوى الخدمة الذي نريد تقديمه رقميا وواقعيا.",
       items: [
         {
-          imageKey: "dogDental",
+          imageKey: "surgerySuite",
           title: "فحص سريري دقيق",
           text: "فحوصات بصرية ولمسية دقيقة تساعد على فهم الحاجة العلاجية بسرعة.",
           alt: "طبيب بيطري يفحص اسنان كلب",
         },
         {
-          imageKey: "pomConsult",
+          imageKey: "modernConsult",
           title: "استشارة جماعية منسقة",
           text: "عيادة اكثر وضوحا حيث يتقاسم الفريق المعلومات المهمة في الوقت المناسب.",
           alt: "فريق بيطري حول كلب صغير اثناء الفحص",
         },
         {
-          imageKey: "catExam",
+          imageKey: "dentalCare",
           title: "تعامل لطيف مع القطط",
           text: "حركات اكثر نعومة وقراءة تناسب السلوك الفيليني داخل العيادة.",
           alt: "قط ابيض يخضع للفحص داخل عيادة بيطرية",
         },
         {
-          imageKey: "catDental",
+          imageKey: "careTeam",
           title: "متابعة صحة الفم",
           text: "العناية السنية عنصر مهم في راحة الحيوان اليومية حتى لو كانت غير مرئية للعائلة.",
           alt: "فحص فم واسنان قط داخل العيادة",

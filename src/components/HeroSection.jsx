@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { DepthCard } from "./DepthCard";
 import { ArrowRightIcon } from "./icons";
 import { Reveal } from "./Reveal";
+import UltraImage from "./UltraImage";
 
 function scrollToSection(id) {
   const target = document.getElementById(id);
@@ -155,12 +156,11 @@ export function HeroSection({ content, visual }) {
                 className="depth-layer-1 relative h-[380px] w-full overflow-hidden rounded-[1.75rem] sm:h-[460px]"
                 style={{ y: imageY }}
               >
-                <img
+                <UltraImage
                   src={visual.src}
                   alt={content.visualAlt}
-                  loading="eager"
-                  decoding="async"
-                  className="h-full w-full object-cover"
+                  priority={true}
+                  className="h-full w-full"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,8,7,0.06),rgba(5,8,7,0.42))]" />
               </motion.div>
@@ -185,12 +185,10 @@ export function HeroSection({ content, visual }) {
                 style={{ y: cardY }}
                 whileHover={prefersReducedMotion ? undefined : { y: -8 }}
               >
-                <img
+                <UltraImage
                   src={content.spotlight.src}
                   alt={content.spotlight.alt}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-28 w-full object-cover"
+                  className="h-28 w-full"
                 />
                 <div className="p-4 text-white">
                   <p className="text-xs uppercase tracking-[0.28em] text-white/70">

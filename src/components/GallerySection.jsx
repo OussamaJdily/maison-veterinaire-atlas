@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { DepthCard } from "./DepthCard";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
+import UltraImage from "./UltraImage";
 
 export function GallerySection({ content, media }) {
   return (
@@ -23,13 +24,11 @@ export function GallerySection({ content, media }) {
                 hoverLift={7}
                 maxTilt={6}
               >
-                <div className="relative overflow-hidden">
-                  <img
+                <div className="relative overflow-hidden h-56">
+                  <UltraImage
                     src={media[item.imageKey].src}
                     alt={item.alt}
-                    loading="lazy"
-                    decoding="async"
-                    className="depth-layer-1 h-56 w-full object-cover transition-transform duration-500 hover:scale-[1.04]"
+                    className="h-full w-full"
                   />
                   <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(6,10,8,0.2))]" />
                 </div>

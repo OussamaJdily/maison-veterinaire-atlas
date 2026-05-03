@@ -71,10 +71,10 @@ function AppShell() {
                 ...content.hero,
                 spotlight: {
                   ...content.hero.spotlight,
-                  src: mediaLibrary.pomConsult.src,
+                  src: mediaLibrary.modernConsult.src,
                 },
               }}
-              visual={mediaLibrary.comfortDog}
+              visual={mediaLibrary.clinicLobby}
             />
 
             <InfoRibbon
@@ -98,8 +98,8 @@ function AppShell() {
             <ExperienceSection
               content={content.experience}
               media={{
-                primary: mediaLibrary.dogDental,
-                secondary: mediaLibrary.catExam,
+                primary: mediaLibrary.surgerySuite,
+                secondary: mediaLibrary.dentalCare,
               }}
             />
 
